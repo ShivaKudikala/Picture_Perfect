@@ -1,0 +1,25 @@
+{% extends "basic_app/base.html" %}
+
+{% block body_block %}
+
+<div class="newenv">
+    <h1 class="createenv">
+        {% if not form.instance.pk %}
+        Create Environment
+        {% else %}
+        Update Environment
+        {% endif %}
+      </h1>
+        <form  method="POST">
+          {% csrf_token %}
+          <div id="create_form">
+            {{ form.as_p }}
+          </div>
+          <input type="submit" class='btn btn-primary' value="Submit">
+      
+        </form>
+</div>
+
+
+
+{% endblock %}

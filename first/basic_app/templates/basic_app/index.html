@@ -1,0 +1,18 @@
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+{% load static %}
+
+
+  <div class="welcome">
+    {% if user.is_authenticated %}
+        <h2 class="welcometext">Welcome {{ user.username }}!</h2>
+    {% else %}
+        <h2 class="welcometext justify-content-center">Welcome to the site!</h2>
+    {% endif %}
+    <h1 class="happytext">Happy to see you here !</h1>
+    <a class="image-gallery" href="{% url 'basic_app:list' %}"> Gallery </a>
+</div>
+
+
+
+{% endblock %}

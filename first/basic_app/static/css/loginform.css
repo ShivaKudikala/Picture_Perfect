@@ -1,0 +1,90 @@
+.login-bg{
+    width: 100% !important;
+    height: 739px !important;
+    position: relative;
+    filter: blur(2px);
+}
+.login-text{
+    
+    top: 18%;
+    left: 40%;
+    position: absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 4rem;
+    font-weight:700;
+    text-decoration: underline;
+
+}
+.login-form{
+    background-color: whitesmoke;
+    padding-top: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    position: absolute;
+    top: 33%;
+    left: 37%;
+    right: 37%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.submit-btn{
+    background-color: #08bdbd;
+    color: black;
+    padding: 8px 40%;
+    border-radius: 5px;
+    margin-top: 7%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.7s;
+    
+}
+.submit-btn:hover{
+    background-color: green;
+    color: white;
+}
+.form-label{
+    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-left: 35%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+.form-input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.register-text{
+    margin-top: 10%;
+    color: #c9ada7;
+    margin-left: 5%;
+}
+.register-link {
+    text-decoration: underline !important;
+}
+.input-icons i {
+    position: absolute;
+}
+.input-icons {
+    width: 100%;
+}
+.icon {
+    padding-top: 15px;
+    padding-left: 15px;
+    min-width: 40px;
+}
+
+@media (max-width: 500px) {
+    .login-form{
+        left: 10% !important;
+        right: 10%;
+        top: 35%;
+    }
+    .login-text{
+        left: 28% !important;
+        top: 21%;
+        /* right: 10% !important; */
+    }
+  }

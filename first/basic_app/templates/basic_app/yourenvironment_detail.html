@@ -1,0 +1,32 @@
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+
+
+<div class="games-section">
+    <div class="container">
+        <div class="games-title">
+            <h2>
+              {{photo_details.name}}
+            </h2>
+            <p>Photography</p>
+        </div>
+          <div class="row row-cols-1 row-cols-md-3 g-2">
+            {% for images in photo_details.photographer.all %}
+              <div class="col">
+                    <div class="game-col">
+                      <div class="card game-card">
+                        <img class="games-img" src="/media/{{images.image}}" alt="game-pix" />
+                        <div class="intro">
+                            <h1 class="game-title">{{images.pic_name}}</h1>
+                            <p class="game-content">{{images.image_description}}</p>
+                        </div>
+                    </div>
+                    </div>
+                      
+                    </div>
+            {% endfor %}
+          </div>
+        </div>
+</div>
+
+{% endblock %}

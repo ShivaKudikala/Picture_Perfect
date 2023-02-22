@@ -1,0 +1,47 @@
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+
+{% load static %}
+  <div>
+      <img class="registration-bg img-fluid" src="{% static "images/bg-login.jpg" %}" alt="bg-img">
+      {% if registered %}
+        <h1 class="thankyou-text">Thank you for registering!</h1>
+        <h1 class="pleaselogin-text">Please do Login and continue..</h1>
+
+        {% else %}
+        <h1 class="registration-text">Register here!</h1>
+        <br>
+        <div class="register-form">
+          <h1 class="welcome-text">Welcome!</h1>
+        <form method="POST">
+          {% csrf_token %}
+            <div id="my_form">
+            <div class="input-icons2">
+            <i class="fa-solid fa-user icon2"></i>
+            <p> {{ user_form.username }} </p>
+            </div>
+            <div class="input-icons2">
+            <i class="fa-solid fa-envelope icon2"></i>
+            <p> {{ user_form.email }} </p>
+            </div>
+            <div class="input-icons2">
+            <i class="fa-solid fa-key icon2"></i>
+            <p> {{ user_form.password }} </p>
+            </div>
+            
+            <input type="checkbox" id="check-box" name="check-box">
+            <label id="check-box" for="check-box">Remember Me</label><br>
+            
+            <input class="register-btn"type="submit" name="" value="Register">
+          </div
+          
+        </form>
+        </div>
+
+      {% endif %}
+
+
+  </div>
+
+  
+{% endblock %}

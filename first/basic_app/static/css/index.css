@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Gloock&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@100&family=Roboto+Slab:wght@100;700;900&family=Teko:wght@400;700&display=swap');
+
+.welcometext {
+    margin-top: 17%;
+    /* left: 30%; */
+    color: white;
+    font-family: 'Gloock', serif;
+    font-size: 3rem !important;
+}
+.happytext{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: white;
+    font-family: 'Gloock', serif;
+    font-size: 3rem !important;
+}
+
+.welcome{
+    text-align: center !important;
+}
+.image-gallery{
+    font-size: 2rem !important;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border : 1px solid white;
+    border-radius: 5px;
+    padding: 0.5% 5%;
+    margin-top: 3% !important;
+    color: whitesmoke;
+    transition: 0.7s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.image-gallery:hover{
+    background-color: rgb(160, 87, 147);
+}
+
+@media (max-width: 500px) {
+    
+    .welcometext {
+        margin-top: 50%;
+    }
+  }

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Gloock&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@100&family=Roboto+Slab:wght@100;700;900&family=Teko:wght@400;700&family=Zeyada&display=swap');
+
+.registration-text {
+    top: 15%;
+    left: 37%;
+    position: absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 4rem;
+    font-weight:700;
+    text-decoration: underline;
+}
+.registration-bg{
+    width: 100% !important;
+    height: 738px !important;
+    position: relative;
+    filter: blur(2px) !important;
+}
+
+.register-form{
+    background-color: whitesmoke;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    position: absolute;
+    top: 31%;
+    left: 37%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.asteriskField {
+    display: none;
+}
+
+#my_form p label {
+    visibility: hidden;
+}
+
+#my_form p input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input-icons2 i {
+    position: absolute;
+}
+
+.input-icons2{
+    width: 100%;
+}
+.icon2{
+    padding-top: 15px;
+    padding-left: 15px;
+    min-width: 40px;
+}
+
+.register-btn{
+    background-color: #08bdbd;
+    color: black;
+    padding: 8px 37%;
+    border-radius: 5px;
+    margin-top: 9%;
+    margin-bottom: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.7s;
+}
+.register-btn:hover{
+    background-color: green;
+    color: white;
+}
+
+#check-box{
+    margin-left: 2%;
+    color: #c9ada7;
+}
+
+.welcome-text{
+    font-family: 'Zeyada', cursive;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+.thankyou-text{
+    top: 25%;
+    left: 25%;
+    position: absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 4rem;
+    font-weight:700;
+}
+.pleaselogin-text{
+    top: 35%;
+    left: 25%;
+    position: absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 4rem;
+    font-weight:700;
+}
+
+@media (max-width: 500px) {
+    .register-form{
+        left: 20% !important;
+        top: 33%;
+    }
+    .registration-text{
+        left: 10%;
+        top: 21%;
+    }
+  }

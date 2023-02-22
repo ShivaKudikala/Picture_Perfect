@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Gloock&family=Oswald:wght@500&family=Playfair+Display+SC:ital@1&family=Playfair+Display:wght@500&family=Poppins:wght@100&family=Roboto+Slab:wght@100;700;900&family=Teko:wght@400;700&family=Zeyada&display=swap');
+
+body{
+    background-color: rgb(37, 23, 47) !important;
+}
+a{
+    text-decoration: none !important;
+}
+.navbar{
+    border-radius: 10px !important;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.ele{
+    color: black !important;
+}
+
+.logo{
+    height: 50px !important;
+    width: 7%;
+}
+
+.logo-name{
+    color: blue !important;
+    font-family: 'Playfair Display SC', serif;
+    padding-left: 2%;
+}
+
+@media (max-width: 500px) {
+    .logo{
+       padding-top: 30px !important;
+       height: 70px !important;
+       width: 100px !important;
+    }
+    .logo-name{
+        padding-left: 5%;
+    }
+  }

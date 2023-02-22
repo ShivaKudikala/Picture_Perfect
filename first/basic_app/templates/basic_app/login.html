@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% block body_block %}
+{% load static %}
+
+  <div style="align-items-center">
+    <img class="login-bg img-fluid" src="{% static "images/bg-login.jpg" %}" alt="bg-img">
+    <h1 class="login-text">LOGIN</h1>
+    <div class="login-form"> 
+      <form method="post" action="{% url 'basic_app:user_login' %}">
+        {% csrf_token %}
+        {% comment %} <label class="form-label" for="username">Username : </label> {% endcomment %}
+        <div class="input-icons">
+          <i class="fa fa-user icon"></i>
+        <input class="form-input" type="text" name="username" placeholder="Username" required>
+        </div>
+        <br>
+        {% comment %} <label class="form-label" for="password">Password : </label> {% endcomment %}
+        <div class="input-icons">
+          <i class="fa-solid fa-key icon"></i>
+          <input class="form-input" type="password" name="password" placeholder="Password" required>
+        </div>
+        <br>
+        <input class="submit-btn" type="submit" name="" value="LOGIN">
+        <br>
+        <br>
+        <p class="register-text">Not a member? <a class="register-link" href="{% url 'basic_app:register' %}">Register now</a></p
+      </form>
+    </div>
+    
+  </div>
+  {% if validinput %}
+  <script>
+    alert('Please give a valid Username or Password!. If you do not have an account please register!');
+  </script>
+  {% endif %}
+  
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+
+    <div class="listview" style="margin-top : 10%">
+
+        <h1 class="select-cat"> Select an Environment  </h1>
+        <ul>
+          <div class="row row-cols-md-6 row-cols-sm-2 row-cols-xs-2 g-2">
+            {% for image in photographer %}
+            <div class="col">
+              <h2><li><a class="categories" href="{{image.id}}/">{{image.name}} </a></li></h2>
+            </div>
+            {% endfor %}
+          </div>
+          </ul>
+    </div>
+
+    <div class="list2">
+      <a class="btn btn-primary btn-1" href="{% url 'basic_app:create' %}">Create Environment</a>
+      <a class="btn btn-primary btn-1" href="{% url 'basic_app:createpic' %}">Upload images</a>
+    </div>
+
+
+    {% comment %} <div class="container">
+      <p><a class='btn btn-warning' href="{% url 'basic_app:update' pk=photo_details.pk %}">Update</a></p>
+    </div> {% endcomment %}
+{% endblock  %}
